@@ -6,6 +6,12 @@ node('slave2') {
 	stage('build'){
 	sh 'mvn package'
 	}
+	stage('test'){
+	sh 'mvn test'
+	}
+	stage('print today date'){
+	sh 'date'
+	}
     
 }
   
